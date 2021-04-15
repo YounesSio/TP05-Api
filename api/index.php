@@ -59,12 +59,6 @@ $app->post('/api/login', function (Request $request, Response $response, $args) 
     return $response;
 });
 
-$app->post('/api/login2', function (Request $request, Response $response, $args) {
-    ...
-    $response = $response->withHeader("Authorization", "Bearer {$token_jwt}");
-    $response = addCorsHeaders($response);
-    return $response;
-});
 
 
 
